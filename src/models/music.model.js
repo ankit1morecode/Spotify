@@ -8,7 +8,8 @@ const musicSchema = new mongoose.Schema({
         type : String
     },
     artist : {
-        type : String
+        type : mongoose.Schema.Types.ObjectId,
+        ref : "artist"
     }
 })
 
